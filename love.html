@@ -1,0 +1,90 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" href="love.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>LOVE METER</title>
+    </head>
+    <body>
+        <div class="cantainer">
+            <div class="content">
+                <h1>Love Calculator</h1>
+                <br>
+            
+                <div class="inputarea">
+                    <input type="text" placeholder="Your name" id="nameone" onfocus="this.value= ''">
+                    <input type="text" placeholder="Lover name" id="nametwo" onfocus="this.value= ''">
+                </div>
+                <br>
+                
+                <a href="#" onclick="love()">Calculate</a>
+            <p id="print">Your relationship result here</p>
+            <p id="statement"></p>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br><br>
+        <br>
+        <br>
+        <br><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <br>
+
+        
+        <br>
+        <div id="Name">
+            <h3><center>Designed by<br> PRAVEEN </h3>
+
+        </div>
+    </div>
+    <script>
+        function love(){
+        var name1 = document.getElementById("nameone").value;
+        var name2 = document.getElementById("nametwo").value;
+        if(name1.length<=2){
+            alert("Enter at least 3 character");
+        }
+        if(name2.length<=2){
+            alert("Enter at least 3 character");
+        }
+        if(name1.length<=2){
+            alert("Enter at least 3 character");
+        }
+        if(name2.length<=2){
+            alert("Enter at least 3 character");
+        }
+        else{
+            var random = Math.floor(Math.random()*100);
+            document.getElementById("print").innerHTML = name1 + " and " + name2 + "=" +random + "%" + "of love";
+        }
+        if(random<=10 || random<=50){
+            document.getElementById("statement").innerHTML = "Good Relationship";
+        }
+        else if(random<=51 || random<=100){
+            document.getElementById("statement").innerHTML = "Lovely Relationship";
+        }
+    }
+        
+
+
+        
+        </script>
+        
+    </body>
+    </html>

@@ -1,0 +1,84 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: pink;
+    font-family: poppins;
+
+
+}
+.cantainer {
+    top: 50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 80vh;
+    
+    width: 100vh;
+    box-shadow: inset -8px -8px 12px rgb(185, 103, 117),
+                inset 8px 8px 12px rgb(201, 95, 114);
+                 border-radius: 50px;
+    
+
+
+
+}
+
+.content{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.content h1{
+    text-transform: uppercase;
+    text-align: center;
+    color:red;
+
+
+}
+.inputarea {
+    display: flex;
+}
+.inputarea input{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    margin: 5px;
+    outline: none;
+    border: 2px solid #d7386d;
+    padding: 20px 30px;
+    font-size: 20px;
+}
+a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #d7386d;
+    padding: 10px;
+    margin: 0px 6px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+#print{
+    display: flex;
+    justify-content: center;
+    background-color: #d7386d;
+    margin: 20px;
+    padding: 20px 50px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+
+}
+#Name{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
